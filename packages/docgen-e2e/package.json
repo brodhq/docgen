@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "name": "@kransio/docgen-e2e",
+    "version": "0.0.69",
+    "description": "> TODO: description",
+    "author": "mads hargreave <mads.hargreave@gmail.com>",
+    "homepage": "",
+    "repository": "git://github.com/geislabs/html.git",
+    "license": "ISC",
+    "directories": {
+        "test": "test"
+    },
+    "files": [],
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org/",
+        "access": "public"
+    },
+    "scripts": {},
+    "devDependencies": {
+        "@kransio/docgen": "^0.0.1"
+    }
+}

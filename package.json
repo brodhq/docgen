@@ -1,0 +1,35 @@
+{
+    "name": "root",
+    "scripts": {
+        "bootstrap": "lerna bootstrap",
+        "bump": "ncu -u --deep && npm update && npm install && lerna bootstrap",
+        "pack": "npm run bump && git add -A && git commit -am \"packed\" --allow-empty && lerna version patch --yes --force-publish",
+        "dev": "lerna run watch --stream --parallel",
+        "build": "lerna run build --stream",
+        "start": "lerna run start --stream",
+        "prepare": "husky install",
+        "release:patch": "git add -A && git commit -am \"released\" --allow-empty && lerna version patch --yes --force-publish",
+        "test:coverage": "jest --collect-coverage",
+        "test": "jest",
+        "test:unit": "jest --testPathIgnorePatterns packages/docgen-e2e",
+        "test:e2e": "jest \"packages/docgen-e2e\"",
+        "watch": "jest --watch",
+        "watch:e2e": "jest \"packages/docgen-e2e\" --watch",
+        "watch:jsdoc": "jest \"packages/docgen-jsdoc\" --watch"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.23",
+        "@types/rimraf": "^3.0.0",
+        "autobind-decorator": "^2.4.0",
+        "eslint": "^7.27.0",
+        "husky": "^6.0.0",
+        "jest": "^27.0.4",
+        "lerna": "^4.0.0",
+        "npm-check-updates": "^11.6.0",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^27.0.2",
+        "ts-loader": "^9.2.2",
+        "ts-node": "^10.0.0",
+        "typescript": "4.2.4"
+    }
+}
