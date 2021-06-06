@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "@krans/docgen-github",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -29,6 +29,6 @@
         "download-git-repo": "^3.0.2"
     },
     "devDependencies": {
-        "@krans/docgen-provider": "^0.0.4"
+        "@krans/docgen-provider": "^0.0.5"
     }
 }
