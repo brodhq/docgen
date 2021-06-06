@@ -11,6 +11,7 @@ describe('examples', () => {
                         path: 'examples/example-1.js',
                         content: `
                             /**
+                             *  @title this is my title
                              *  @file this is my example
                              */
                             const value = 5
@@ -22,7 +23,7 @@ describe('examples', () => {
             {
                 id: 'example-1',
                 path: 'examples/example-1.js',
-                name: 'example-1',
+                name: 'this is my title',
                 description: `this is my example`,
                 content: `const value = 5`,
             },

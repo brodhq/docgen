@@ -24,10 +24,10 @@ export class Examples {
                     id: slugify(name, {
                         lower: true,
                     }),
-                    name,
+                    name: result.data.title ?? name,
                     path: file.path,
                     content: result.replaced,
-                    description: result.data.description,
+                    description: result.data.description ?? '',
                 }
             }
         }

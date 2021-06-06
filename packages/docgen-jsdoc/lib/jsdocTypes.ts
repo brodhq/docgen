@@ -1,5 +1,6 @@
 export interface ParseMetadata {
-    description: string
+    title?: string
+    description?: string
 }
 
 export interface ParseSuccessResult {

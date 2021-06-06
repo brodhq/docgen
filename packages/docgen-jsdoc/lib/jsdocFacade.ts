@@ -11,11 +11,18 @@ export function parse(content: string): ParseResult {
         }
     }
     const { tags } = doctrine.parse(header, { unwrap: true })
-    // @ts-expect-error
-    const { file: description } = tags.reduce(
-        (acc, tag) => ({ ...acc, [tag.title]: tag.description }),
+    const data = tags.reduce(
+        (acc, tag) => ({ ...acc, [mapName(tag.title)]: tag.description }),
         {}
     )
     const replaced = content.replace(regex, '').trim()
-    return { success: true, replaced, data: { description: description } }
+    return { success: true, replaced, data }
+}
+
+function mapName(tagName: string) {
+    return (
+        {
+            file: 'description',
+        }[tagName] ?? tagName
+    )
 }
