@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@kransio/docgen-e2e",
+    "name": "@krans/docgen-e2e",
     "version": "0.0.3",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
@@ -17,6 +17,6 @@
     },
     "scripts": {},
     "devDependencies": {
-        "@kransio/docgen": "^0.0.3"
+        "@krans/docgen": "^0.0.3"
     }
 }

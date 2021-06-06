@@ -1,6 +1,6 @@
 {
     "private": false,
-    "name": "@kransio/docgen-provider",
+    "name": "@krans/docgen-provider",
     "version": "0.0.3",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",

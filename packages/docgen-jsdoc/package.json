@@ -1,6 +1,6 @@
 {
     "private": false,
-    "name": "@kransio/docgen-jsdoc",
+    "name": "@krans/docgen-jsdoc",
     "version": "0.0.3",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
