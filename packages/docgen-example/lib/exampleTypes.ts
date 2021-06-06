@@ -4,4 +4,5 @@ export interface Example {
     path: string
     description: string
     content: string
+    language: string | null
 }

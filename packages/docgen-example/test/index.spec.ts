@@ -22,10 +22,11 @@ describe('examples', () => {
         ).resolves.toStrictEqual([
             {
                 id: 'example-1',
-                path: 'examples/example-1.js',
+                path: 'example-1.js',
                 name: 'this is my title',
                 description: `this is my example`,
                 content: `const value = 5`,
+                language: 'js',
             },
         ])
     })
@@ -35,7 +36,7 @@ describe('examples', () => {
             toArray(
                 examples.create([
                     {
-                        path: 'examples',
+                        path: 'examples/my-example.js',
                         content: `
                             /**
                              *  @file this is my example
@@ -44,7 +45,7 @@ describe('examples', () => {
                         `,
                     },
                     {
-                        path: 'some_other_folder',
+                        path: 'ignore/my-other-example.js',
                         content: `
                             /**
                              *  @file this is my example
@@ -56,11 +57,12 @@ describe('examples', () => {
             )
         ).resolves.toStrictEqual([
             {
-                id: 'examples',
-                name: 'examples',
-                path: 'examples',
+                id: 'my-example',
+                name: 'my-example',
+                path: 'my-example.js',
                 description: `this is my example`,
                 content: `const value = 5`,
+                language: 'js',
             },
         ])
     })

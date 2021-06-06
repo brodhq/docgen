@@ -17,6 +17,10 @@ export class Examples {
                     throw result.error
                 }
                 const filename = path.basename(file.path)
+                const extname = path
+                    .extname(file.path)
+                    .replace(/^\./, '')
+                    .trim()
                 // Remove file extension
                 const extregex = /\.(.+)$/g
                 const name = filename.replace(extregex, '')
@@ -25,9 +29,10 @@ export class Examples {
                         lower: true,
                     }),
                     name: result.data.title ?? name,
-                    path: file.path,
+                    path: file.path.split('/').slice(1).join('/'),
                     content: result.replaced,
                     description: result.data.description ?? '',
+                    language: extname === '' ? null : extname,
                 }
             }
         }
