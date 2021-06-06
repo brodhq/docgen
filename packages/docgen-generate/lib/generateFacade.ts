@@ -1,4 +1,4 @@
-import { Example } from '@kransio/docgen-example'
+import { Example } from '@krans/docgen-example'
 import { GenerateConfig } from './generateConfig'
 import { Artifact } from './generateTypes'
 

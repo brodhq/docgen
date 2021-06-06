@@ -1,5 +1,5 @@
-import { File } from '@kransio/docgen-provider'
-import { parse } from '@kransio/docgen-jsdoc'
+import { File } from '@krans/docgen-provider'
+import { parse } from '@krans/docgen-jsdoc'
 import slugify from 'slugify'
 import path from 'path'
 import { ExampleConfig } from './exampleConfig'

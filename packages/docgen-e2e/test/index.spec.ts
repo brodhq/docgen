@@ -1,4 +1,4 @@
-import { docgen } from '@kransio/docgen'
+import { docgen } from '@krans/docgen'
 import fs from 'fs'
 import { outdent } from 'outdent'
 import path from 'path'

@@ -1,4 +1,4 @@
-import { Artifact } from '@kransio/docgen-generate'
+import { Artifact } from '@krans/docgen-generate'
 import fs from 'fs'
 import path from 'path'
 import { OutputConfig } from './outputConfig'

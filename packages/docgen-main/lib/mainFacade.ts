@@ -1,7 +1,7 @@
-import { config as createExamples } from '@kransio/docgen-example'
-import { generate } from '@kransio/docgen-generate'
-import { output } from '@kransio/docgen-output'
-import { File } from '@kransio/docgen-provider'
+import { config as createExamples } from '@krans/docgen-example'
+import { generate } from '@krans/docgen-generate'
+import { output } from '@krans/docgen-output'
+import { File } from '@krans/docgen-provider'
 import { DocgenConfig } from './mainConfig'
 
 export async function docgen(

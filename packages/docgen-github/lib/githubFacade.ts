@@ -1,4 +1,4 @@
-import { ProviderAdapter } from '@kransio/docgen-provider'
+import { ProviderAdapter } from '@krans/docgen-provider'
 // @ts-expect-error
 import { download } from 'download-git-repo'
 import { GithubConfig } from './githubConfig'
