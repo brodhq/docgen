@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "@kransio/docgen",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -25,11 +25,11 @@
         "watch": "tsc --watch"
     },
     "dependencies": {
-        "@kransio/docgen-provider": "^0.0.2",
-        "@kransio/docgen-example": "^0.0.2",
-        "@kransio/docgen-jsdoc": "^0.0.2",
-        "@kransio/docgen-generate": "^0.0.2",
-        "@kransio/docgen-github": "^0.0.2",
-        "@kransio/docgen-output": "^0.0.2"
+        "@kransio/docgen-example": "^0.0.3",
+        "@kransio/docgen-generate": "^0.0.3",
+        "@kransio/docgen-github": "^0.0.3",
+        "@kransio/docgen-jsdoc": "^0.0.3",
+        "@kransio/docgen-output": "^0.0.3",
+        "@kransio/docgen-provider": "^0.0.3"
     }
 }

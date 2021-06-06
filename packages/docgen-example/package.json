@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "@kransio/docgen-example",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -25,8 +25,8 @@
         "watch": "tsc --watch"
     },
     "dependencies": {
-        "@kransio/docgen-jsdoc": "^0.0.2",
-        "@kransio/docgen-provider": "^0.0.2",
+        "@kransio/docgen-jsdoc": "^0.0.3",
+        "@kransio/docgen-provider": "^0.0.3",
         "slugify": "^1.5.3"
     }
 }
