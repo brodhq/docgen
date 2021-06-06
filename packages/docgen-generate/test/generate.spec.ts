@@ -13,7 +13,7 @@ describe('generate', () => {
                 language: 'js',
             })
         ).toStrictEqual({
-            path: 'examples/my-example.js',
+            path: 'examples/my-example.md',
             content: outdent`
                 ---
                 title: My example
@@ -36,7 +36,7 @@ describe('generate', () => {
                 language: null,
             })
         ).toStrictEqual({
-            path: 'examples/my-example.js',
+            path: 'examples/my-example.md',
             content: outdent`
                 ---
                 title: My example

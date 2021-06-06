@@ -7,7 +7,7 @@ export function generate(
     _config: Partial<GenerateConfig> = {}
 ): Artifact {
     return {
-        path: example.path,
+        path: example.path.replace(/\.(.+)$/, '.md'),
         content: [
             '---',
             `title: ${example.name}`,

@@ -1,5 +1,5 @@
 import { File } from './files'
 
 export interface ProviderAdapter {
-    find: () => AsyncIterable<File>
+    find: () => Iterable<File> | AsyncIterable<File>
 }
