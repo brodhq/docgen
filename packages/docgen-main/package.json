@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "@krans/docgen",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -25,11 +25,11 @@
         "watch": "tsc --watch"
     },
     "dependencies": {
-        "@krans/docgen-example": "^0.0.5",
-        "@krans/docgen-generate": "^0.0.5",
-        "@krans/docgen-github": "^0.0.5",
-        "@krans/docgen-jsdoc": "^0.0.5",
-        "@krans/docgen-output": "^0.0.5",
-        "@krans/docgen-provider": "^0.0.5"
+        "@krans/docgen-example": "^0.0.6",
+        "@krans/docgen-generate": "^0.0.6",
+        "@krans/docgen-github": "^0.0.6",
+        "@krans/docgen-jsdoc": "^0.0.6",
+        "@krans/docgen-output": "^0.0.6",
+        "@krans/docgen-provider": "^0.0.6"
     }
 }
