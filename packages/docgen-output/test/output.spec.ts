@@ -31,4 +31,20 @@ describe('output', () => {
                 .toString('utf-8')
         ).toBe(`const value = 5`)
     })
+    test('nested', async () => {
+        await output(
+            [
+                {
+                    path: 'nested/my-example.md',
+                    content: 'const value = 5',
+                },
+            ],
+            { outDir: path.resolve(__dirname, 'tmp') }
+        )
+        expect(
+            fs
+                .readFileSync(path.resolve(outDir, 'nested/my-example.md'))
+                .toString('utf-8')
+        ).toBe(`const value = 5`)
+    })
 })

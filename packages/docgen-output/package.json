@@ -26,6 +26,10 @@
     },
     "dependencies": {
         "@krans/docgen-example": "^0.0.5",
-        "@krans/docgen-generate": "^0.0.5"
+        "@krans/docgen-generate": "^0.0.5",
+        "fs-extra": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.11"
     }
 }

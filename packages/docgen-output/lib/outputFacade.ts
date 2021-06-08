@@ -1,5 +1,5 @@
 import { Artifact } from '@krans/docgen-generate'
-import fs from 'fs'
+import fsextra from 'fs-extra'
 import path from 'path'
 import { OutputConfig } from './outputConfig'
 
@@ -9,11 +9,11 @@ export async function output(
         outDir = path.resolve(process.cwd(), 'examples'),
     }: Partial<OutputConfig> = {}
 ): Promise<void> {
-    if (!fs.existsSync(outDir)) {
-        fs.mkdirSync(outDir)
+    if (!fsextra.existsSync(outDir)) {
+        fsextra.mkdirSync(outDir)
     }
     for await (const artifact of source) {
         const absolute = path.resolve(outDir, artifact.path)
-        fs.writeFileSync(absolute, artifact.content)
+        fsextra.outputFileSync(absolute, artifact.content)
     }
 }
