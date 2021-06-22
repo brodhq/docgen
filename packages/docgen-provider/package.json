@@ -5,7 +5,7 @@
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
-    "repository": "git://github.com/pansarhq/docgen.git",
+    "repository": "git://github.com/brodhq/docgen.git",
     "license": "ISC",
     "main": "dist/index.js",
     "directories": {
